@@ -101,11 +101,11 @@
 #for i in range(4):
     #print(i)
 
-def draw_triangle(n):
-    for i in range(n):
-        print('🧱'*(i+1))
+#def draw_triangle(n):
+    #for i in range(n):
+        #print('🧱'*(i+1))
 
-draw_triangle(4)
+#draw_triangle(4)
 
 #in programming we always start counting from 0. 
 
