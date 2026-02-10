@@ -5,7 +5,7 @@
 #r/learnpython, community in reddit for beginners. 
 
 #for loop i in range(n): 
-#for i in range(4):
+    #for i in range(4):
     #print ('Hi')
 
 #for i in range(5):
@@ -26,7 +26,7 @@
 
 #name = 'Python'
 #print(name*3)
-#rint(name + '3') #when concatenating, both need to be strings. 
+#print(name + '3') #when concatenating, both need to be strings. 
 
 #def double(x):
     #return x*2
@@ -57,7 +57,7 @@
 
 #a = [1,2,3] #list is mutable. square brackets means list. 
 #b = a
-#a.append(4) #you will be adding 4 to the original list.
+#a.append(4) #you will be adding 4 to the original list. 
 #print(b) #b will also show the updated list because both a and b point to the same list. 
 #print(a)
 
@@ -101,11 +101,11 @@
 #for i in range(4):
     #print(i)
 
-#def draw_triangle(n):
-    #for i in range(n):
-        #print('🧱'*(i+1))
+def draw_triangle(n):
+    for i in range(n):
+        print('🧱'*(i+1))
 
-#draw_triangle(6)
+draw_triangle(4)
 
 #in programming we always start counting from 0. 
 
@@ -124,16 +124,16 @@
 #draw_triangle(5)
 
 #draw a pyramid
-    #         4 spaces + 1 #
+    #         4 spaces + 1 # i = 0 
    ###        3 spaces + 3 #
   #####       2 spaces + 5 # 
  #######      1 spaces + 7 #
 
-def draw_pyramid(n):
-    for i in range(n):
-        print(' '*(n-i-1) + '#'*(i*2+1))
+#def draw_pyramid(n):
+    #for i in range(n):
+        #print(' '*(n-i-1) + '#'*(i*2+1))
 
-draw_pyramid(4)
+#draw_pyramid(4)
 
 
 
