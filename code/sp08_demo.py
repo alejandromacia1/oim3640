@@ -7,7 +7,7 @@
 #else:
     #print("Adult")
 
-
+#Age Classification Program
 #age = int(input('What is your age?   >>'))
 
 #if age < 18: 
@@ -17,6 +17,7 @@
 #else:
     #print('Adult')
 
+#Grading System
 score = 91
 
 if score >= 90:
@@ -26,6 +27,6 @@ elif score >= 80:
 elif score >= 70:
     print('C')
 else: 
-    print('F') #order matters - first matching condition wins. 
-    #important: each branch must be indented.
-
+    print('F') 
+#order matters - first matching condition wins. 
+#important: each branch must be indented.
