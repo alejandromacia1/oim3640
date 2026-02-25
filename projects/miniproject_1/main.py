@@ -2,11 +2,11 @@
 print("Welcome to Professor Li's restaurant guide!")
 
 #User Preferences
-cuisine = input("What type of cuisine are you in the mood for? (Select one: French, Italian, Mexican): ")
+cuisine = input("\nWhat type of cuisine are you in the mood for? (Select one: French, Italian, Mexican): ")
 
 while True:
-    vibe = input("What vibe do you want? (Casual, Romantic, Fancy): ")
-    budget = input("What budget are you working with? ($, $$, $$$): ")
+    vibe = input("\nWhat vibe do you want? (Casual, Romantic, Fancy): ")
+    budget = input("\nWhat budget are you working with? ($, $$, $$$): ")
 
     if vibe == "Fancy" and budget == "$":
         print("Fancy dining requires at least $$ budget. Please choose again.")
@@ -105,17 +105,17 @@ main_price2 *= multiplier
 dessert_price1 *= multiplier
 dessert_price2 *= multiplier
 
-print("/n----- ENTREE -----")
+print("\n----- ENTREE -----")
 print("1.", entree1, "- $", round(entree_price1, 2))
 print("2.", entree2, "- $", round(entree_price2, 2))
 entree_choice = int(input("Select the entree of your choice (1 or 2): "))
 
-print("/n----- MAIN COURSE -----")
+print("\n----- MAIN COURSE -----")
 print("1.", main1, "- $", round(main_price1, 2))
 print("2.", main2, "- $", round(main_price2, 2))
 main_choice = int(input("Select the main course of your choice (1 or 2): "))
 
-print("/n----- DESSERT -----")
+print("\n----- DESSERT -----")
 print("1.", dessert1, "- $", round(dessert_price1, 2))
 print("2.", dessert2, "- $", round(dessert_price2, 2))
 dessert_choice = int(input("Select the dessert of your choice (1 or 2): "))
