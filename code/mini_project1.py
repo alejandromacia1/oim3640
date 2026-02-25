@@ -16,3 +16,107 @@ while True:
 
     else:
         break
+
+#Restaurant Recommendations.
+#Cuisine Preference
+if cuisine == "French":
+    restaurant = "French Bistro"
+elif cuisine == "Italian":
+    restaurant = "Italian Trattoria"
+elif cuisine == "Mexican":
+    restaurant = "Mexican Grill"
+else:
+    restaurant = "No Restaurant Found"
+
+#Vibe Preference
+if vibe == "Casual":
+    restaurant = "Casual " + restaurant
+elif vibe == "Romantic":
+    restaurant = "Signature " + restaurant
+elif vibe == "Fancy":
+    restaurant = "Premium " + restaurant
+
+
+#Budget Preference (Multiplier Strategy)
+if budget == "$":
+    multiplier = 1
+elif budget == "$$":
+    multiplier = 1.4
+else:
+    multiplier = 2.2
+
+#Tailored Recommendation based on User Inputs 
+print("Based on your preferences, we highly recommend:", restaurant)
+
+#Menu Offerings - French
+if cuisine == "French":
+    entree1 = "Onion Soup"
+    entree2 = "Salad Nicoise"
+    entree_price1 = 9
+    entree_price2 = 12
+
+    main1 = "Coq au Vin"
+    main2 = "Steak Frites"
+    main_price1 = 18
+    main_price2 = 21
+
+    dessert1 = "Macarons"
+    dessert2 = "Creme Brulee"
+    dessert_price1 = 6
+    dessert_price2 = 7
+
+elif cuisine == "Italian":
+    entree1 = "Caprese Salad"
+    entree2 = "Bruschetta"
+    entree_price1 = 9
+    entree_price2 = 10
+
+    main1 = "Margherita Pizza"
+    main2 = "Gnocchi alla Sorrentina"
+    main_price1 = 16
+    main_price2 = 19
+
+    dessert1 = "Tiramisu"
+    dessert2 = "Cannoli"
+    dessert_price1 = 8
+    dessert_price2 = 5
+
+elif cuisine == "Mexican":
+    entree1 = "Guacamole and Chips"
+    entree2 = "Esquites"
+    entree_price1 = 8
+    entree_price2 = 6
+
+    main1 = "Chilaquiles"
+    main2 = "Tacos al Pastor"
+    main_price1 = 11
+    main_price2 = 10
+
+    dessert1 = "Tres Leches Cake"
+    dessert2 = "Churros"
+    dessert_price1 = 6
+    dessert_price2 = 5
+
+#Pricing Mechanisms
+entree_price1 *= multiplier
+entree_price2 *= multiplier
+main_price1 *= multiplier
+main_price2 *= multiplier
+dessert_price1 *= multiplier
+dessert_price2 *= multiplier
+
+print("/n----- ENTREE -----")
+print("1.", entree1, "- $", round(entree_price1, 2))
+print("2.", entree2, "- $", round(entree_price2, 2))
+entree_choice = int(input("Select the entree of your choice (1 or 2): "))
+
+print("/n----- MAIN COURSE -----")
+print("1.", main1, "- $", round(main_price1, 2))
+print("2.", main2, "- $", round(main_price2, 2))
+main_choice = int(input("Select the main course of your choice (1 or 2): "))
+
+print("/n----- DESSERT -----")
+print("1.", dessert1, "- $", round(dessert_price1, 2))
+print("2.", dessert2, "- $", round(dessert_price2, 2))
+dessert_choice = int(input("Select the dessert of your choice (1 or 2): "))
+
