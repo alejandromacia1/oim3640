@@ -173,3 +173,46 @@ if add_tip == "yes":
         print("1. 18%")
         print("2. 20%")
         print("3. 22%")
+
+        
+        tip_choice = input("Choose 1, 2, or 3: ").strip()
+
+        if tip_choice == "1":
+            tip_rate = 0.18
+            break
+        elif tip_choice == "2":
+            tip_rate = 0.20
+            break
+        elif tip_choice == "3":
+            tip_rate = 0.22
+            break
+        else:
+            print("No tip selected.")
+
+    tip = subtotal * tip_rate
+
+total = subtotal + tax + tip
+
+print("\n----- CUSTOMER RECEIPT -----")
+print("\nRestaurant:", restaurant)
+print("\nServer: Alejandro Macia")
+
+print("\nItems:")
+print(f"Entree: {decision_entree} - ${decision_entree_price:.2f}")
+print(f"Main: {decision_main} - ${decision_main_price:.2f}")
+print(f"Dessert: {decision_dessert} - ${decision_dessert_price:.2f}")
+
+print("\nCharges:")
+print(f"Subtotal: ${subtotal:.2f}")
+print(f"Tax (6.25%): ${tax:.2f}")
+
+if add_tip == "yes" and tip_rate > 0:
+    print(f"Tip ({int(tip_rate*100)}%): ${tip:.2f}")
+else:
+    print("Tip: $0.00")
+
+print("===================")
+print(f"TOTAL:    ${total:.2f}")
+print("===================")
+
+print("\nThank you for visiting Professor Li's restaurant! We hope you have a nice day")
