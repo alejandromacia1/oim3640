@@ -120,3 +120,31 @@ print("1.", dessert1, "- $", round(dessert_price1, 2))
 print("2.", dessert2, "- $", round(dessert_price2, 2))
 dessert_choice = int(input("Select the dessert of your choice (1 or 2): "))
 
+#Calculate Tax (Massachusetts):
+def calc_tax(price):
+    """Calculate product tax based on given price."""
+    tax_rate = 0.0625  # Massachusetts tax rate (6.25%)
+    tax = price * tax_rate
+    return tax
+
+#Conditions - Overview of Customer Decisions
+if entree_choice == 1:
+    decision_entree = entree1
+    decision_entree_price = entree_price1
+else:
+    decision_entree = entree2
+    decision_entree_price = entree_price2
+
+if main_choice == 1:
+    decision_main = main1
+    decision_main_price = main_price1
+else:
+    decision_main = main2
+    decision_main_price = main_price2
+
+if dessert_choice == 1:
+    decision_dessert = dessert1
+    decision_dessert_price = dessert_price1
+else:
+    decision_dessert = dessert2
+    decision_dessert_price = dessert_price2
