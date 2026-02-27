@@ -14,7 +14,7 @@ Simulator for ordering menus: The program will show users a small menu with plat
 
 Output of the receipt: The program will compute the receipt total and will then display the receipt output once all items and quantities are chosen. 
 
-Menu prices dependent on budget: If possible, I want to apply a simple multiplier that will help me differentiate the prices of the items found across fast-food restaurants ($), accessible/informal dining restaurants ($$), and high-end dining options ($$$). 
+Menu prices dependent on budget: If possible, I want to apply a simple multiplier that will help me differentiate the prices of the items found across fast-food restaurants ($), accessible or informal dining restaurants ($$), and high-end dining options ($$$). 
 
 ## What I don’t know yet: 
 As of now, I don’t know how complex I will make this recommendation system. Although I want to include multiple cuisine options for users to choose from, I am still determining how to structure the program so that different combinations of user preferences lead to accurate restaurant suggestions. Considering that this is the first mini project we are completing in the course, I am not sure as of now whether I will implement different menus for each cuisine type or if I will keep a single shared menu for all cuisines. 
