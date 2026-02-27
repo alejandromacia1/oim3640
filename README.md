@@ -11,4 +11,4 @@ This is the course repository for OIM3640.
 - Name: Zhi Li
 
 ## My Projects: 
-- [First Project]
+- [First Project] (/blob/main/projects/miniproject_1/main.py)
