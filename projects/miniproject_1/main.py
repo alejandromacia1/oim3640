@@ -171,10 +171,9 @@ if add_tip == "yes":
     while True:
         print("\nSelect tip rate:")
         print("1. 18%")
-        print("2. 20%")
+        print("2. 20% (Suggested Amount)")
         print("3. 22%")
 
-        
         tip_choice = input("Choose 1, 2, or 3: ").strip()
 
         if tip_choice == "1":
