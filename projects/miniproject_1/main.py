@@ -148,3 +148,28 @@ if dessert_choice == 1:
 else:
     decision_dessert = dessert2
     decision_dessert_price = dessert_price2
+
+    #Calculating Massachusetts Tax
+def calc_tax(price):
+    """Calculate product tax based on given price."""
+    tax_rate = 0.0625  # tax rate in Massachusetts (6.25%)
+    tax = price * tax_rate
+    return tax
+
+#Calculating Totals (tax is always included, tip is optional but highly suggested)
+subtotal = decision_entree_price + decision_main_price + decision_dessert_price
+
+tax = calc_tax(subtotal)
+
+tip = 0
+tip_rate = 0
+
+add_tip = input("\nWould you like to add a tip? (yes/no): ").strip().lower()
+
+if add_tip == "yes":
+
+    while True:
+        print("\nSelect tip rate:")
+        print("1. 18%")
+        print("2. 20%")
+        print("3. 22%")
