@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>MBTA Stop Finder</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: #dce8f7;
+      color: #1a3a6b;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #1a3a6b;
+      border-radius: 4px;
+      width: 70%;
+    }
+
+    button {
+      padding: 8px 16px;
+      background: #1a3a6b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 24px;
+      background: white;
+      border: 1px solid #1a3a6b;
+      border-radius: 6px;
+      padding: 16px;
+    }
+
+    .error { color: red; margin-top: 12px; }
+  </style>
+</head>
+<body>
+
+  <h1>🚇 MBTA Stop Finder</h1>
+  <p>Enter any Boston-area place and find the nearest T stop.</p>
+
+  <form method="POST">
+    <input type="text" name="place" placeholder="e.g. Fenway Park..." required/>
+    <button type="submit">Search</button>
+  </form>
+
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% endif %}
+
+  {% if result %}
+    <div class="result">
+      <h2>{{ result.station }}</h2>
+      <p>Nearest stop to: <strong>{{ result.place }}</strong></p>
+      <p>Wheelchair accessible:
+        {% if result.accessible == "Accessible" %}✅ Yes
+        {% elif result.accessible == "Inaccessible" %}❌ No
+        {% else %}Unknown{% endif %}
+      </p>
+    </div>
+  {% endif %}
+
+</body>
+</html>

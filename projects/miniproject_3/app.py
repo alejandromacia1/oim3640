@@ -12,9 +12,9 @@ def index():
     if request.method == "POST":
         place = request.form.get("place", "").strip()
         if place:
-            station, accessible, _ = find_stop_near(place)
+            station, wheelchair_status = find_stop_near(place)
             if station:
-                result = {"place": place, "station": station, "accessible": accessible}
+                result = {"place": place, "station": station, "accessible": wheelchair_status}
             else:
                 error = f"No results found for '{place}'. Try a different address."
 
