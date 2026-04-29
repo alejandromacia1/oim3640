@@ -17,4 +17,6 @@ My project is an interactive Python command-line restaurant guide and menu simul
 
 - [Second Project] (https://github.com/alejandromacia1/oim3640/tree/main/projects/miniproject_2)
 
+My second mini project is a dialogue processing system that analyzes and retrieves speech from the novel, titled Wuthering Heights and its two protagonists, Catherine and Heathcliff. In order to deliver better quantitative insights into the two major characters' responsibilities throughout the novel, it is intended to measure and contrast their dialogue dominance. The application imports the entire book, divides it into the different chapters, then uses quoting patterns to identify dialogue portions. Each conversation line is subsequently assigned to each of the protagonists using a speaker detection process. Accordingly, the approach tracks how each of the protagonist's participation changes throughout the novel's sections and evaluates a number of measures, including their most common words and the total of words spoken. Overall, the assignment mimics an assessment of literature tool that converts written material into quantifiable insights.
+
 - [Third Project] (https://github.com/alejandromacia1/oim3640/tree/main/projects/miniproject_3)
